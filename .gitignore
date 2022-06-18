@@ -1,0 +1,15 @@
+src/compile_flags.txt
+src/compile_commands.json
+
+*.dSYM/
+*.su
+*.idb
+*.pdb
+
+.DS_Store
+.AppleDouble
+.LSOverride
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
