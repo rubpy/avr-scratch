@@ -1,11 +1,11 @@
 ## avr-scratch 🤖
 
 An example minimal compile/deploy setup (**build system**) for Atmel/Microchip ATmega (**AVR**) microcontrollers. \
-`💡 With some extra tips & tricks.`
+💡 With some extra tips & tricks.
 
 Compiles plain C code (does not require *Arduino IDE*) using `avr-gcc`, and supports deploying to devices (with `avrdude`) lacking native USB support (e.g., boards that rely on`bit-bang/V-USB` & `USBtinyISP`).
 
-Also, **works on macOS**! (even via a `microUSB to USB-B` + `USB-B to USB-C` adapter combo)
+Also, **works on macOS**! (even via a *microUSB to USB-B* + *USB-B to USB-C* adapter combo)
 
 ## Why?
 > ☝️ I have personally found *Arduino IDE* and the *Arduino* platform to be somewhat muddled, confusing, and a rather superfluous layer of abstraction. Getting the IDE to work properly, especially on a Linux/macOS machine, can be far from straightforward; hence, this setup tells you how to avoid the use of the *Arduino* platform completely, when dealing with common development boards.
@@ -18,16 +18,15 @@ As these simple shell scripts are by no means exhaustive, it is highly recommend
 - `avr-gcc`
 - `avrdude`
 
-#### How to install
-----------
+### How to install
 
-**Linux** (Ubuntu/Debian):
+#### Linux (Ubuntu/Debian):
 ```console
 $ sudo apt-get install gcc-avr avr-libc avrdude
 ```
 For more information, see: [avr-gcc](https://gcc.gnu.org/wiki/avr-gcc) on `gcc.gnu.org`, [avr-libc](https://www.nongnu.org/avr-libc/) on `nongnu.org`, and [avrdudes/avrdude](https://github.com/avrdudes/avrdude) on GitHub.
 
-**macOS** (*Homebrew* required):
+#### macOS (*Homebrew* required):
 ```console
 $ xcode-select --install
 $ brew tap osx-cross/avr
